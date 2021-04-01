@@ -1,0 +1,72 @@
+import React, { useContext, useState, useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
+import { Container, Row, Col } from 'react-bootstrap';
+import Title from '../Title/Title';
+import AboutImg from '../Image/AboutImg';
+import PortfolioContext from '../../context/context';
+
+const About = () => {
+  const { about } = useContext(PortfolioContext);
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }, []);
+
+  return (
+    <section id="about">
+      <Container>
+        <Title title="저는 누구일까요?" />
+        <Row className="about-wrapper">
+          <Col md={6} sm={12}>
+            <Fade bottom duration={1000} delay={600} distance="30px">
+              <div className="about-wrapper__image">
+                <AboutImg alt="profile picture" filename={img} />
+              </div>
+            </Fade>
+          </Col>
+          <Col md={6} sm={12}>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+              <div className="about-wrapper__info">
+                <p className="about-wrapper__info-text">
+                  {paragraphOne ||
+                    '첫 사회생활은 해양플랜트 제조현장에서 외국인 선주와 통역 및 안전업무를 하였습니다. 이후 우여곡절을 거치며 여러 경험들을하며 떠돌다가, 국비지원 자바교육으로 처음 코딩을 배우며 전반적인 IT업계를 느꼈습니다. 교육원 수료 후 취업이 되어 시스템 관리자로 일하였습니다.'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphTwo ||
+                    '일은 다소 단순한 DB 검색 및 유지보수 등의 전산실 업무 뿐이라 5년 후의 제 모습이 기대되지 않았습니다. 개인의 성장을 원하여 퇴사 후, Front 개발을 배우고 있습니다.'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphThree || '남들보다 시작이 늦은 만큼, 마음이 급하지만 마음만 앞선다고 성장이 빠를 순 없기에 클론코딩등으로 큰 틀을 익힌 후에, HTML, CSS, JS, REACT 하나하나 신경써서 배우고 있습니다.  아래 버튼을 누르시면 더 상세한 이력서를 확인하실 수 있습니다.'}
+                </p>
+                {resume && (
+                  <span className="d-flex mt-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume"
+                      href={resume}
+                    >
+                      Resume
+                    </a>
+                  </span>
+                )}
+              </div>
+            </Fade>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+export default About;
