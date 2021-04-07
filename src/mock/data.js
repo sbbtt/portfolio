@@ -50,7 +50,7 @@ export const projectsData = [
     img: 'todo.png',
     title: 'Todo 리스트',
     info: '자바스크립트 연습용',
-    info2: '바닐라 자바스크립트를 사용하여 돔컨트롤, 이벤트 추가&삭제, 로컬스토리지 사용을 구현하였스니다.',
+    info2: '바닐라 자바스크립트를 사용하여 돔컨트롤, 이벤트 추가&삭제, 로컬스토리지 사용을 구현하였습니다.',
     url: 'https://sbbtt.github.io/js-clock/',
     repo: 'https://github.com/sbbtt/js-clock', // if no repo, the button will not show up
   },
