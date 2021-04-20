@@ -47,12 +47,12 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'todo.png',
-    title: 'Todo 리스트',
-    info: '자바스크립트 연습용',
-    info2: '바닐라 자바스크립트를 사용하여 돔컨트롤, 이벤트 추가&삭제, 로컬스토리지 사용을 구현하였습니다.',
-    url: 'https://sbbtt.github.io/js-clock/',
-    repo: 'https://github.com/sbbtt/js-clock', // if no repo, the button will not show up
+    img: 'coffee.jpg',
+    title: '커피숍 랜딩페이지',
+    info: 'HTML, CSS, JS의 기본기를 탄탄히 하고자 만든 스타벅스 클론코딩입니다.',
+    info2: '랜딩페이지를 만들며 lodash, gsap, swiper등의 자바스크립트 라이브러리를 사용하였습니다. ',
+    url: 'https://sbbtt.github.io/coffee/',
+    repo: 'https://github.com/sbbtt/coffee', // if no repo, the button will not show up
   },
 ];
 
