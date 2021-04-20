@@ -56,7 +56,7 @@ const About = () => {
                       className="cta-btn cta-btn--resume"
                       href={resume}
                     >
-                      Resume
+                      이석주의 이력서 확인하기 (구글드라이브 링크로 연결됩니다.)
                     </a>
                   </span>
                 )}
