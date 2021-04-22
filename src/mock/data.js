@@ -51,7 +51,7 @@ export const projectsData = [
     title: '커피숍 랜딩페이지',
     info: 'HTML, CSS, JS의 기본기를 탄탄히 하고자 만든 스타벅스 클론코딩입니다.',
     info2: '랜딩페이지를 만들며 lodash, gsap, swiper등의 자바스크립트 라이브러리를 사용하였습니다. ',
-    url: 'https://sbbtt.github.io/coffee/',
+    url: 'https://keen-leakey-d05b43.netlify.app/',
     repo: 'https://github.com/sbbtt/coffee', // if no repo, the button will not show up
   },
 ];
