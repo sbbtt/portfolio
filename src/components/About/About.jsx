@@ -46,9 +46,9 @@ const About = () => {
                     '일은 다소 단순한 DB 검색 및 유지보수 등의 경영지원 사무업무 뿐이라 5년 후의 제 모습이 기대되지 않았습니다. 개인의 성장을 원하여 이직을 생각하였지만 요즘 이슈인 직고용 대상기업 중 하나였기에 회사내부 사정과 맞물려 퇴사를 결정하게 되었습니다. 이후 Front 개발을 배우고 있습니다.'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || '남들보다 시작이 늦은 만큼, 마음이 급하지만 마음만 앞선다고 성장이 빠를 순 없기에 클론코딩등으로 큰 틀을 익힌 후에, HTML, CSS, JS, REACT 하나하나 신경써서 배우고 있습니다.  아래 버튼을 누르시면 더 상세한 이력서를 확인하실 수 있습니다.'}
+                  {paragraphThree || '남들보다 시작이 늦은 만큼, 마음이 급하지만 마음만 앞선다고 성장이 빠를 순 없기에 클론코딩등으로 큰 틀을 익힌 후에, HTML, CSS, JS, REACT 하나하나 신경써서 배우고 있습니다.  더 상세한 이력서는 메일로 요청해주세요 sbbt@naver.com'}
                 </p>
-                {resume && (
+                {/* {resume && (
                   <span className="d-flex mt-3">
                     <a
                       target="_blank"
@@ -59,7 +59,7 @@ const About = () => {
                       RESUME 이력서 보기
                     </a>
                   </span>
-                )}
+                )} */}
               </div>
             </Fade>
           </Col>
