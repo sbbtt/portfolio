@@ -48,7 +48,7 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || '남들보다 시작이 늦은 만큼, 마음이 급하지만 마음만 앞선다고 성장이 빠를 순 없기에 클론코딩등으로 큰 틀을 익힌 후에, HTML, CSS, JS, REACT 하나하나 신경써서 배우고 있습니다.  더 상세한 이력서는 메일로 요청해주세요 sbbt@naver.com'}
                 </p>
-                {/* {resume && (
+                {resume && (
                   <span className="d-flex mt-3">
                     <a
                       target="_blank"
@@ -59,7 +59,7 @@ const About = () => {
                       RESUME 이력서 보기
                     </a>
                   </span>
-                )} */}
+                )}
               </div>
             </Fade>
           </Col>
